@@ -1,14 +1,11 @@
 ﻿using BaseAuthenticationWebAPI.Core.Applications.Interfaces.Services;
 using BaseAuthenticationWebAPI.Core.Domain;
 
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BaseAuthenticationWebAPI.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class AuthController : ControllerBase
+    public class AuthController : ControllerBaseApi
     {
         public ITokenService _tokenService { get; set; }
 
